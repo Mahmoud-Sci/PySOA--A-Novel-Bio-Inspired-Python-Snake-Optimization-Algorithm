@@ -148,7 +148,7 @@ switch F
         lb=0;
         ub=10;
         dim=4;
-CEC-2019 test functions
+%CEC-2019 test functions
     case 'cec01'
         fobj=@cec01;
         lb=-8192;
@@ -427,27 +427,7 @@ end
 function o=Ufun(x,a,k,m)
 o=k.*((x-a).^m).*(x>a)+k.*((-x-a).^m).*(x<(-a));
 end
-
-%                                                                   %
-%  Author and programmer: Jaza Mahmood abdullah                     %
-%                                                                   %
-%         e-Mail: jazamahmood@gmail.com                             %
-%                 jaza.abdullah.univsul.edu.iq                      %
-%                                                                   %
-%                                                                   %
-%                                                                   %
-% This code is an implementation of CEC-06 2019  single objective   %
-% benchmark functions from CEC01 to CEC10
-% in order to easily use these functions, please look at this work for correct usage, https://uk.mathworks.com/matlabcentral/fileexchange/71129-fitness-dependent-optimizer-fdo
-% the function located inside SelectFunction file.
-%
-%    You can cite this work for using this references                                                               %
-% J. M. Abdullah and T. A. Rashid, "Fitness Dependent Optimizer:
-% Inspired by the Bee Swarming Reproductive Process," in IEEE Access.
-% doi: 10.1109/ACCESS.2019.2907012
-% keywords: {Optimization;Swarm Intelligence;Evolutionary Computation;Metaheuristic Algorithms;Fitness Dependent Optimizer;FDO},
-% URL: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8672851&isnumber=6514899               %
-%
+%_____________________________________________________________
 function o = cec01(x)
 dim =9;
 p1 = 0.0;
@@ -752,6 +732,7 @@ shitedRotaatedX = shiftedX * rotatedMatrix;
 %         end
 o=-20*exp(-.2*sqrt(sum(shitedRotaatedX.^2)/D))-exp(sum(cos(2*pi.*shitedRotaatedX))/D)+20+exp(1);
 end
+%____________________________________________________________________________
 function out=PressureVesselDesign(x)
 y1=x(:,1);%Ts
 y2=x(:,2);%Th
