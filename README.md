@@ -3,8 +3,7 @@ Article:PySOA: A Novel Bio-Inspired Python Snake Optimization Algorithm
 Outhers: 
 Mahmoud S. Diab(m.diab@aun.edu.eg), 
 Mohamed M. Darwish(mohamed_darwish@aun.edu.eg), 
-Diego Oliva(diego.oliva@cucei.udg.mx), 
-Marco Pérez-Cisneros(marco.perez@cucei.udg.mx), 
+Diego Oliva(diego.oliva@cucei.udg.mx),
 Khalid M. Hony*(k_hosny@yahoo.com; k_hosny@zu.edu.eg).
 
 Developed at MATLAB R2016a
