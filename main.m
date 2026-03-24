@@ -1,5 +1,5 @@
 %Article:PySOA: A Novel Bio-Inspired Python Snake Optimization Algorithm
-%Journal:International Journal of Intelligent Systems
+%Journal:Cluster Computing
 %outhers:
 %Mahmoud S. Diab(m.diab@aun.edu.eg)
 %Yousef S. Alsahafi(ysalsahafi@uj.edu.sa)
