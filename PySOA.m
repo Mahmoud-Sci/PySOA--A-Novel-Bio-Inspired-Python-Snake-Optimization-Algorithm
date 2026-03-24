@@ -47,16 +47,16 @@ function [best_pos, Python_Score, PySOA_curve] = PySOA(SearchAgents_no, maxIter,
                 if hidden == 0 % Prey doesn't detect Python
                     if abs(rwo) < 0.5 % Exploration Phase(Searching phase)
                         r=rand;
-                        %Moving Forward or backward the prey
+                        %Moving Forward or backward the prey Eq.(11)
                         if r < 0.5
                             Python_pos(i, j) = best_pos(j) + r * Python_pos(i, j); 
                         else
                             Python_pos(i, j) = best_pos(j) - r * Python_pos(i, j);
                         end
-                    else % Exploitation Phase(Attacking Phase)
+                    else % Exploitation Phase(Attacking Phase) Eq.(10)
                         Python_pos(i, j) = best_pos(j) - rwo * log10(IR) * S * Python_pos(i, j);
                     end
-                else % Prey detects Python (Hidden=1)
+                else % Prey detects Python (Hidden=1) Eq.(12)
                     rand_index = randi([1, SearchAgents_no]);
                     Python_pos(i, j) = best_pos(j) - rwo * log10(IR) * S * Python_pos(rand_index, j);
                 end
