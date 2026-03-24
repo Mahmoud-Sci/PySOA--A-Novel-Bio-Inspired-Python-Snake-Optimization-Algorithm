@@ -2,7 +2,6 @@
 %Journal:Cluster Computing
 %outhers:
 %Mahmoud S. Diab(m.diab@aun.edu.eg)
-%Yousef S. Alsahafi(ysalsahafi@uj.edu.sa)
 %Mohamed M. Darwish(mohamed_darwish@aun.edu.eg)
 %Diego Oliva(diego.oliva@cucei.udg.mx)
 %Khalid M. Hony*(k_hosny@yahoo.com; k_hosny@zu.edu.eg)
