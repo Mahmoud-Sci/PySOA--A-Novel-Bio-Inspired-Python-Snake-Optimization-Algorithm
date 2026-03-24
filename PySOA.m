@@ -9,7 +9,7 @@ function [best_pos, Python_Score, PySOA_curve] = PySOA(SearchAgents_no, maxIter,
     
     % Main loop
     while t < maxIter
-        Temp = 1 - t / maxIter;  % Eq.(3) Ambient temperature variable descreace from 1 to 0
+        Temp = 1 - t / maxIter;  % Eq.(5) Ambient temperature variable descreace from 1 to 0
         
         for i = 1:SearchAgents_no
             % Apply boundary conditions only if agent is outside bounds
@@ -34,8 +34,8 @@ function [best_pos, Python_Score, PySOA_curve] = PySOA(SearchAgents_no, maxIter,
             Air_poll = rand;
             for j = 1:dim
                 hidden = randi([0, 1]); % Hidden is binary
-                rwo = (Temp) / (D(i, j) + exp((hum + Air_poll))); % Eq.(2) Density of phormones
-                %Eq.(4)
+                rwo = (Temp) / (D(i, j) + exp((hum + Air_poll))); % Eq.(4) Density of phormones
+                %Eq.(6)
                 if D(i, j) <= max_distance
                     S = k * (light / cos(D(i, j))); %Sight increases as Python approaches prey
                 else
